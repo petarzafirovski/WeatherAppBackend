@@ -4,6 +4,8 @@
 </div>
 
 After that, just run: `docker-compose up -d` in the command line in the same root where the `Dockerfile` and `docker-compose.yml` files are stored.
-To access swagger ui, navigate to the following URL after starting both of the containers: `http://localhost:80/swagger/index.html`
+
+To access swagger ui, navigate to the following URL after starting both of the containers: http://localhost:80/swagger/index.html.
+
 No need to apply migrations manually, they are applied once the container for the backend is started. 
 
