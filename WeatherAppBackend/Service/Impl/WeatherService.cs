@@ -29,7 +29,7 @@ namespace WeatherAppBackend.Service.Impl
             {
                 var str when str.Equals(ForecastCategoryType.TwoDay.GetType(), StringComparison.OrdinalIgnoreCase) => ConstructUrlForMultipleDayForecast(city, ForecastCategoryType.TwoDay.GetInterval()),
                 var str when str.Equals(ForecastCategoryType.SevenDay.GetType(), StringComparison.OrdinalIgnoreCase) => ConstructUrlForMultipleDayForecast(city, ForecastCategoryType.SevenDay.GetInterval()),
-                var str when str.Equals(ForecastCategoryType.OneHour.GetType(), StringComparison.OrdinalIgnoreCase) => ConstructUrlForMultipleDayForecast(city, ForecastCategoryType.SevenDay.GetInterval()),
+                var str when str.Equals(ForecastCategoryType.OneHour.GetType(), StringComparison.OrdinalIgnoreCase) => ConstructUrlForOneHourForecast(city),
                 _ => GetCurrentWeatherUrl(city),
             };
             return finalConstructedUrl;
